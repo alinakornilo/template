@@ -7,7 +7,7 @@ public class BasePage {
 
   private final WebDriver driver;
 
-  BasePage() {
+  public BasePage() {
     driver = BaseTest.getDriver();
   }
 

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
+  private static final String BASE_URL = "https://www.google.com.ua/";
   private static WebDriver driver;
 
   public static WebDriver getDriver() {
@@ -23,6 +24,7 @@ public class BaseTest {
   @BeforeTest
   public void setupTest() {
     driver = new ChromeDriver();
+    driver.get(BASE_URL);
   }
 
   @AfterTest
